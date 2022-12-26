@@ -3,7 +3,7 @@ import './style.css';
 import './btnStyle.css'
 
 
-const Header = ({darkMode, setDarkMode}) => (
+const Header = ({ darkMode, setDarkMode }) => (
     <header className={'header ' + (darkMode ? 'dark-mode' : 'light-mode')}>
         <div className="container">
             <span className="logo-header">Portifólio</span>
@@ -13,9 +13,9 @@ const Header = ({darkMode, setDarkMode}) => (
                     <li><a className="link" href="#teste">Skills</a></li>
                     <li><a className="link" href="#teste">Contato</a></li>
                     <li>
-                        <button 
-                        onClick={() => setDarkMode(!darkMode)} 
-                        className={darkMode? 'ativado': 'desativado'}>
+                        <button
+                            onClick={() => setDarkMode(!darkMode)}
+                            className={darkMode ? 'ativado' : 'desativado'}>
                             <div className="select">
                             </div>
                         </button>

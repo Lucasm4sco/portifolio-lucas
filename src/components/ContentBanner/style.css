@@ -5,11 +5,130 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding: 10px;
-    gap: 20px;
+    gap: 30px;
     color: whitesmoke;
+    padding: 20px;
 }
 
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.content-banner h1 {
+    font-size: 2.5em;
+    font-family: Helvetica, sans-serif;
+}
+
+.content-banner h1 span {
+    display: inline-block;
+    border-right: 2px solid transparent;
+}
+
+.content-banner h1 .typing-1 {
+    width: 0;
+    overflow-x: hidden;
+    white-space: nowrap;
+    animation: type-cursor .5s 8 normal, typing-1 2s 1s normal steps(50) forwards;
+}
+
+.content-banner h1 .typing-2 {
+    width: 0;
+    overflow-x: hidden;
+    white-space: nowrap;
+    animation: type-cursor .5s 4s 3 normal, typing-2 1.2s 4s normal steps(40) forwards;
+}
+
+.content-banner .blue-stripe-animation {
+    position: relative;
+    height: 4em;
+    width: 0;
+    overflow: hidden;
+    animation: blue-stripe 1.2s 5.5s ease-in-out forwards;
+}
+
+.content-banner .blue-stripe-animation p {
+    font-size: 2em;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: .3em;
+    white-space: nowrap;
+}
+
+.content-banner .blue-stripe-animation span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 153, 255);
+    position: absolute;
+    inset: 0;
+    animation: remove-blue-stripe 1s 7s ease-out forwards;
+}
+
+@keyframes typing-1 {
+    0% {
+        width: 0;
+    }
+
+    90% {
+        width: 8.8em;
+    }
+
+    100% {
+        width: 8.8em;
+    }
+}
+
+@keyframes typing-2 {
+    0% {
+        width: 0;
+    }
+
+    90% {
+        width: 4.5em;
+    }
+
+    100% {
+        width: 4.5em;
+    }
+}
+
+@keyframes type-cursor {
+    50% {
+        border-right-color: white;
+    }
+
+    100% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes blue-stripe {
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes remove-blue-stripe {
+    to {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .content-banner h1 {
+        font-size: 1.8em;
+    }
+
+    .content-banner .blue-stripe-animation {
+        height: 2.5em;   
+    }
+
+    .content-banner .blue-stripe-animation p {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    @keyframes blue-stripe {
+        to {
+            width: 16em;
+        }
+    }
 }

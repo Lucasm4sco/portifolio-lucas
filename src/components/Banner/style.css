@@ -3,11 +3,11 @@
     overflow: hidden;
     background-image: linear-gradient(50deg, #bd3a3c, #bd843a, rgb(143, 82, 224), rgb(91, 42, 170), rgba(32,173,190,1), rgba(22,158,95,1) );
     background-size: 800% 800%;
-    background-position:right top;
-    animation: animar 20s linear infinite;
+    background-position: right top;
+    animation: animar-gradient 20s linear infinite;
 }
 
-@keyframes animar {
+@keyframes animar-gradient {
     50% {
         background-position: left bottom;
     }

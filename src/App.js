@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import Header from "./components/Header";
-import ContentBanner from "./components/ContentBanner";
+import Main from "./components/Main";
 
 const App = () => {
   
@@ -11,7 +11,7 @@ const App = () => {
   return(
     <div className="App">
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <ContentBanner />
+      <Main />
     </div>
 )};
 
