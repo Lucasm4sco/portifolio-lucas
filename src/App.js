@@ -4,15 +4,15 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 const App = () => {
-  
-  const [ darkMode, setDarkMode ] = useState(false);
 
+  const [darkMode, setDarkMode] = useState(false);
 
-  return(
+  return (
     <div className="App">
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Main />
+      <Main darkMode={darkMode} />
     </div>
-)};
+  )
+};
 
 export default App;

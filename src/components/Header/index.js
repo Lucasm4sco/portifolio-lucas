@@ -9,7 +9,7 @@ const Header = ({ darkMode, setDarkMode }) => (
             <span className="logo-header">Portifólio</span>
             <nav>
                 <ul className="container" type="none">
-                    <li><a className="link" href="#teste">About</a></li>
+                    <li><a className="link" href="#about">About</a></li>
                     <li><a className="link" href="#teste">Skills</a></li>
                     <li><a className="link" href="#teste">Contato</a></li>
                     <li>

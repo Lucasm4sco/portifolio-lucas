@@ -1,9 +1,11 @@
 import ContentBanner from '../ContentBanner';
+import SectionAbout from '../SectionAbout';
 
-const Main = () => {
+const Main = ({ darkMode }) => {
   return (
     <main>
-        <ContentBanner />
+      <ContentBanner />
+      <SectionAbout darkMode={darkMode} />
     </main>
   )
 }
