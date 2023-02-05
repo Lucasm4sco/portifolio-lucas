@@ -10,7 +10,7 @@ const Header = ({ darkMode, setDarkMode }) => (
             <nav>
                 <ul className="container" type="none">
                     <li><a className="link" href="#about">About</a></li>
-                    <li><a className="link" href="#teste">Skills</a></li>
+                    <li><a className="link" href="#skills">Skills</a></li>
                     <li><a className="link" href="#teste">Contato</a></li>
                     <li>
                         <button
