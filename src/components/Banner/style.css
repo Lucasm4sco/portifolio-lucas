@@ -6,6 +6,11 @@
     background-position: right top;
     background-attachment: fixed;
     animation: animar-gradient 20s linear infinite;
+    background-color: aliceblue;
+}
+
+.banner.dark-mode {
+    background-color: #0d1237f1;
 }
 
 @keyframes animar-gradient {

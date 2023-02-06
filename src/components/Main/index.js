@@ -6,7 +6,7 @@ import SectionProjects from '../SectionProjects';
 const Main = ({ darkMode }) => {
   return (
     <main>
-      <ContentBanner />
+      <ContentBanner darkMode={darkMode} />
       <SectionAbout darkMode={darkMode} />
       <SectionSkills darkMode={darkMode} />
       <SectionProjects darkMode={darkMode} />

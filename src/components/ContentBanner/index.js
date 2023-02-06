@@ -1,10 +1,9 @@
 import Banner from "../Banner";
 import './style.css';
 
-const ContentBanner = () => {
-
+const ContentBanner = ({ darkMode }) => {
     return (
-        <Banner>
+        <Banner darkMode={darkMode}>
             <div className="content-banner">
                 <h1>
                     <span className="typing-1">Olá, eu me chamo </span>
