@@ -1,0 +1,130 @@
+.section-projects {
+    margin-bottom: 100vh;
+    padding: 70px 20px 50px;
+    background:  aliceblue
+}
+
+.section-projects h2 {
+    font-size: 1.9em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+    color: rgb(51, 51, 51);
+    text-decoration: underline #d4c536f1;
+}
+
+.section-projects.dark-mode {
+    background-color:  #0d1237f1;
+}
+
+.section-projects.dark-mode h2 {
+    color: aliceblue;
+    text-decoration: underline #819e40
+}
+
+.section-projects .container {
+    max-width: 1024px;
+    min-height: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6%;
+}
+
+.section-projects .card-project {
+    max-width: 300px;
+    min-width: 220px;
+    width: 90%;
+    height: 200px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(39, 37, 37);
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px 0px #AAA;
+    overflow: hidden;
+    position: relative;
+    background-color: #c3c6c9;
+}
+
+.section-projects.dark-mode .card-project {
+    box-shadow: 2px 5px 10px 0px #010101;
+    background-color: #262e58c9;
+}
+
+.section-projects .card-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-projects .card-project img.imgMobile {
+    object-fit: contain;
+}
+
+.section-projects .card-project .about-project {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #5361d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    transition: all 1s ease;
+}
+
+.section-projects.dark-mode .about-project {
+    background-color: #8860b9;
+}
+
+.section-projects .card-project:hover .about-project {
+    top: 0%;
+}
+
+.section-projects .about-project .title-project {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    padding-top: 10px ;
+    color: white;
+}
+
+.section-projects.dark-mode .title-project {
+    color: rgb(29, 30, 95);
+}
+
+.section-projects .about-project .description {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(217, 217, 217);
+}
+
+.section-projects .about-project .link-project {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    background-color: rgb(44, 52, 168);
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all .2s ease;
+    box-shadow: 1px 1px 0px 1px rgba(45, 77, 173, 0.8);
+}
+
+.section-projects.dark-mode .link-project {
+    background-color: rgb(105, 57, 168);
+    box-shadow: 1px 1px 0px 1px rgba(105, 45, 173, 0.348);
+}
+
+.section-projects .about-project .link-project:hover {
+    background-color: #17248a;
+    box-shadow: 1px 1px 8px 2px rgba(151, 151, 197, 0.55);
+}
+
+.section-projects.dark-mode .about-project .link-project:hover {
+    background-color: rgb(104, 45, 182);
+    box-shadow: 1px 1px 8px 2px rgba(156, 117, 201, 0.548);
+}

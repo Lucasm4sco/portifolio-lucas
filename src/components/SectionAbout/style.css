@@ -1,8 +1,12 @@
 .section-about {
     min-height: 70vh;
     padding: 70px 20px 50px;
-    background-color: aliceblue;
-    margin-bottom: 100vh;
+    background: aliceblue;
+}
+
+.section-about.dark-mode {
+    background: linear-gradient(#0d1237f1 20%, #150d37ea);
+    color: #fff
 }
 
 .section-about h2 {
@@ -10,11 +14,6 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 50px;
-}
-
-.section-about.dark-mode {
-    background-color: #0d1237f1;
-    color: white;
 }
 
 .section-about.light-mode h2 {
