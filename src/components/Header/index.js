@@ -11,7 +11,7 @@ const Header = ({ darkMode, setDarkMode }) => (
                 <ul className="container" type="none">
                     <li><a className="link" href="#about">About</a></li>
                     <li><a className="link" href="#skills">Skills</a></li>
-                    <li><a className="link" href="#teste">Contato</a></li>
+                    <li><a className="link" href="#contact">Contato</a></li>
                     <li>
                         <button
                             onClick={() => setDarkMode(!darkMode)}
